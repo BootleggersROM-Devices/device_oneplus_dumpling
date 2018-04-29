@@ -22,9 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/dumpling/device.mk)
 
 # Inherit some common gzosp stuff.
-$(call inherit-product, vendor/gzosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
-PRODUCT_NAME := gzosp_dumpling
+PRODUCT_NAME := bootleg_dumpling
 PRODUCT_DEVICE := dumpling
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -42,3 +42,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="OnePlus5T-user 8.0.0 OPR1.170623.032 88 release-keys"
 
 TARGET_VENDOR := oneplus
+
+PRODUCT_BUILD_PROP_OVERRIDES += DEVICE_MAINTAINERS="Syed Sajid" BOOTLEG_BUILD_TYPE="Shishufied"
